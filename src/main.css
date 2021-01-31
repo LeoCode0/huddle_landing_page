@@ -1,3 +1,11 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,4 +18,34 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 60px;
+}
+
+.header__picture {
+  display: block;
+}
+
+.header__picture img {
+  width: 100px;
+  object-fit: contain;
+}
+
+.button {
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: 0;
+}
+
+.header__button {
+  color: var(--pink);
+  background-color: #fff;
+  border: 1px solid var(--pink);
 }
