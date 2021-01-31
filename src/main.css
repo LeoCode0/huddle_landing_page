@@ -18,6 +18,11 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--very-pale-blue);
+}
+img {
+  display: block;
+  object-fit: contain;
 }
 
 .header {
@@ -35,7 +40,6 @@ body {
 
 .header__picture img {
   width: 100px;
-  object-fit: contain;
 }
 
 .button {
@@ -48,4 +52,81 @@ body {
   color: var(--pink);
   background-color: #fff;
   border: 1px solid var(--pink);
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.main__title {
+  font-size: 2rem;
+}
+
+.title_container,
+.text_container,
+.main__button__container {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text_container {
+  margin: 2rem auto;
+}
+
+.text {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.main__button {
+  color: #fff;
+  padding: 10px 40px;
+  font-weight: 700;
+  background-color: var(--pink);
+  box-shadow: 0px 1px 6px -2px #000;
+  margin-bottom: 50px;
+}
+
+.hero__image img {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.communities,
+.messages {
+  width: 60%;
+  margin: 30px 0;
+}
+
+.metrics__icon img {
+  width: 30px;
+}
+
+.metrics__span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.metrics__sample-text {
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+}
+
+.communities .metrics__sample-text {
+  margin: 0;
 }
