@@ -19,7 +19,6 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -242,12 +241,15 @@ img {
 }
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
   background-color: var(--very-dark-cyan);
   height: auto;
   color: #fff;
   padding: 50px 15px 15px;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer_dark_wave {
@@ -339,7 +341,18 @@ img {
   color: #00acee;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
+  .white_wave_bottom,
+  .white_wave_top,
+  .blue_wave_bottom,
+  .blue_wave_top,
+  .footer_dark_wave {
+    background-size: cover;
+    height: calc(100px + 12vh);
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .header {
     height: 120px;
   }
@@ -468,5 +481,51 @@ img {
     display: block;
     margin: 0 auto;
     padding: 15px 60px;
+  }
+
+  .form {
+    align-items: center;
+    justify-content: initial;
+  }
+
+  .footer__container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 100px 100px 50px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .footer__newsletter,
+  .footer_about {
+    height: 250px;
+  }
+
+  .footer__newsletter {
+    width: 480px;
+  }
+
+  .footer_about {
+    display: block;
+    width: 500px;
+    margin-right: 200px;
+  }
+
+  .footer_about .footer__text {
+    width: 60%;
+  }
+
+  .footer__text {
+    width: 70%;
+  }
+
+  .form__input {
+    width: 300px;
+    height: 4.5rem;
+    margin-right: 20px;
+  }
+
+  .form__button {
+    margin: 0;
   }
 }
