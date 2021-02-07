@@ -329,16 +329,30 @@ img {
   justify-content: space-between;
 }
 
-.socialMedia span {
+.socialMedia a {
+  color: white;
+}
+
+.socialMedia span,
+a {
   transition: all 0.3s;
 }
 
-.socialMedia span:hover {
+.socialMedia span:hover,
+.socialMedia a:hover {
   cursor: pointer;
 }
 
 .twitter:hover {
   color: #00acee;
+}
+
+.text__red {
+  color: red;
+}
+
+.text__green {
+  color: green;
 }
 
 @media screen and (min-width: 768px) {
@@ -508,7 +522,7 @@ img {
   .footer_about {
     display: block;
     width: 500px;
-    margin-right: 200px;
+    margin-right: 180px;
   }
 
   .footer_about .footer__text {
