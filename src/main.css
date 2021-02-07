@@ -323,9 +323,9 @@ img {
 
 .socialMedia {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top: 20px;
-  width: 100px;
+  width: 130px;
   justify-content: space-between;
 }
 
@@ -369,14 +369,20 @@ a {
 @media screen and (min-width: 1024px) {
   .header {
     height: 120px;
+    padding: 0 70px;
   }
 
   .header__picture img {
     width: 200px;
   }
 
+  .main {
+    margin-top: 150px;
+  }
+
   .main__title {
-    font-size: 4rem;
+    font-size: 5rem;
+    width: 100%;
   }
 
   .main__text {
@@ -386,11 +392,12 @@ a {
   }
 
   .main__button {
-    padding: 15px 70px;
+    padding: 20px 100px;
+    margin: 20px 0 80px;
   }
 
   .hero__image img {
-    width: 60%;
+    width: 76%;
   }
 
   .metrics {
@@ -402,7 +409,7 @@ a {
   }
 
   .metrics span {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   .communities,
@@ -438,15 +445,11 @@ a {
   .white_bg,
   .blue_bg {
     align-items: center;
+    height: 500px;
   }
 
   .blue_bg {
     flex-direction: row-reverse;
-  }
-
-  .blue_bg,
-  .white_bg {
-    height: 350px;
   }
 
   .characteristics__image {
@@ -485,16 +488,28 @@ a {
     background-image: url("./images/bg-footer-top-desktop.svg");
   }
 
+  .start {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .start__info {
+    width: 80%;
+  }
+
   .start__title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin: 0;
   }
 
   .start__button {
     width: auto;
     display: block;
-    margin: 0 auto;
-    padding: 15px 60px;
+    margin: 30px auto 0;
+    padding: 20px 110px;
+    font-size: 1.6rem;
   }
 
   .form {
@@ -530,7 +545,7 @@ a {
   }
 
   .footer__text {
-    width: 70%;
+    width: 65%;
   }
 
   .form__input {
